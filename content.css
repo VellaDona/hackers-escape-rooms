@@ -1,0 +1,173 @@
+.main{
+    display: grid;
+    font-size: 1.5rem;
+    
+}
+/*button block*/
+.button_block{
+    display: flex;
+    flex-direction: column;
+}
+.btn_challenges{
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    width: 19.25rem;
+    height: 4.125rem;
+    box-sizing: border-box;
+}
+.btn_challenges.on-site{
+    background-color: #8acfe5;
+    color: black;
+    margin: 2rem 5rem;
+}
+
+.btn_challenges.online{
+    text-decoration: underline;
+    color: #36769d;
+    font-size: 1rem;
+    background: none;
+    padding: 0.25rem;
+    margin: 0 4rem 2rem 4rem;
+
+}
+/*review block*/
+.img_face{
+    border-radius: 50%;
+    height: 4.5rem;
+    /* margin-right: 1rem; */
+    
+}
+.review_block{
+    box-sizing: border-box;
+    padding: 0 1rem;
+    display:flex;
+    align-items: flex-start;
+    margin: 3rem 0;
+}
+.review_block p:first-of-type {
+    font-style: italic;
+    /* font-size: 1.5rem; */
+    padding-left: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+.review_block p:last-of-type {
+    font-size: 1rem;
+    padding:  0 0 0 1rem;
+    margin: 0 0 2rem 0;
+}
+
+.review_block.second{
+    display: none;
+}
+
+/*middle block Full story*/
+.middle_block_story{
+display: flex;
+flex-direction: column;
+align-items: center;
+box-sizing: border-box;
+height: 31.25rem;
+}
+.middle_block_story p{
+font-size: 1.75rem;
+color: white;
+text-align: center;
+padding: 3.5rem 1.25rem 1rem 1.25rem; 
+max-width: 39.5rem;
+box-sizing: border-box;
+}
+
+.btn_challenges.story{
+    background-color: #011827;
+    color: #8acfe5;
+    border: 2px solid #8acfe5;
+    margin: 0 0 2.5rem 0;
+}
+
+/*play-block with photos*/
+.mid_block_play{
+    color: black;
+    display: grid;
+}
+.mid_block_play{
+    display: grid;
+}
+.mid_block_play.play{
+    display: flex;
+    align-items: flex-start;
+  
+}
+.book_challenge, .see_challenges {
+  padding: 2rem 1rem;    /* одинаковый внутренний отступ для всех элементов внутри */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.mid_block_play h2{
+    font-size: 2rem;
+    font-weight: 700;
+    /* padding: 2rem 1rem 0 1rem;
+    box-sizing: border-box;*/
+    margin: 0 1rem 0 0; 
+    /* margin: 0 0 1rem 0;     */
+}
+.mid_block_play p{
+    /* padding: 1rem;
+    box-sizing: border-box; */
+    /* margin: 0 0 0 1rem; */
+    /* margin: 0 0 1rem 0;    отступ снизу, чтобы отделить от текста */
+
+}
+
+.btn_challenges.book{
+    background-color: #e3170a;
+    color: white;
+    min-width: 19.25rem;
+    margin: 2rem 0;
+    justify-self: flex-start;
+    display: inline-block;
+}
+
+@media screen and (min-width: 600px) {
+    .btn_challenges.online{
+    background-color: #e3170a;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    margin: 2rem 5rem;
+    text-decoration: none;
+}
+ .button_block{
+    align-items: center;
+}
+.review_block.second{
+    display: flex;
+}  
+.review_block{
+    max-width: 32.625rem;
+}
+
+}
+
+@media screen and (min-width: 900px) {
+    .button_block{
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -4.5rem;
+}
+
+  .review_block_whole {
+    display: flex;
+    justify-content: center;
+  }
+.review_block{
+    padding: 0;
+}
+}

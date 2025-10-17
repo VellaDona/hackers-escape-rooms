@@ -24,7 +24,7 @@ html, body{
     height: 100%;
 }
 
-.header, .footer{
+.header, .footer, .middle_block_story{
     background-color: #011827;
     color: white;
 }
@@ -55,4 +55,12 @@ button {
     width: 100%;
     max-height: 468px;
     object-fit: cover; 
+}
+/* h2{
+    font-size: 2rem;
+    font-weight: 700;
+} */
+.mid_block_play img{
+    width: 100vw;
+    
 }
