@@ -92,16 +92,13 @@ box-sizing: border-box;
     color: black;
     display: grid;
 }
-.mid_block_play{
-    display: grid;
-}
 .mid_block_play.play{
     display: flex;
     align-items: flex-start;
   
 }
 .book_challenge, .see_challenges {
-  padding: 2rem 1rem;    /* одинаковый внутренний отступ для всех элементов внутри */
+  padding: 2rem 1rem;    
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -111,18 +108,11 @@ box-sizing: border-box;
 .mid_block_play h2{
     font-size: 2rem;
     font-weight: 700;
-    /* padding: 2rem 1rem 0 1rem;
-    box-sizing: border-box;*/
     margin: 0 1rem 0 0; 
-    /* margin: 0 0 1rem 0;     */
 }
-.mid_block_play p{
-    /* padding: 1rem;
-    box-sizing: border-box; */
-    /* margin: 0 0 0 1rem; */
-    /* margin: 0 0 1rem 0;    отступ снизу, чтобы отделить от текста */
+/* .mid_block_play p{
 
-}
+} */
 
 .btn_challenges.book{
     background-color: #e3170a;
@@ -169,5 +159,9 @@ box-sizing: border-box;
   }
 .review_block{
     padding: 0;
+}
+.book_challenge, .see_challenges{
+    max-width: 26rem;
+
 }
 }
