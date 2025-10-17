@@ -29,6 +29,18 @@ html, body{
     color: white;
 }
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+     cursor: pointer; 
+}
+button {
+  cursor: pointer; 
+}
 .logo{
     width: 128px;
     height: 82px;
@@ -43,5 +55,4 @@ html, body{
     width: 100%;
     max-height: 468px;
     object-fit: cover; 
-    margin: 0;
 }
