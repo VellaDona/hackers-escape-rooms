@@ -7,21 +7,23 @@
 .button_block{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .btn_challenges{
     font-weight: 700;
     font-size: 1.5rem;
     border: none;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     padding: 1rem;
     width: 19.25rem;
     height: 4.125rem;
     box-sizing: border-box;
+    margin: 2rem 0 1rem 0;
 }
 .btn_challenges.on-site{
     background-color: #8acfe5;
     color: black;
-    margin: 2rem 5rem;
+    /* margin: 2rem 0; */
 }
 
 .btn_challenges.online{
@@ -30,14 +32,15 @@
     font-size: 1rem;
     background: none;
     padding: 0.25rem;
-    margin: 0 4rem 2rem 4rem;
+    /* margin: 0 4rem 2rem 4rem; */
+    margin: 0;
 
 }
 /*review block*/
 .img_face{
     border-radius: 50%;
     height: 4.5rem;
-    /* margin-right: 1rem; */
+    margin-right: 1rem;
     
 }
 .review_block{
@@ -49,7 +52,6 @@
 }
 .review_block p:first-of-type {
     font-style: italic;
-    /* font-size: 1.5rem; */
     padding-left: 1rem;
     margin: 0 0 0.5rem 0;
 }
@@ -84,7 +86,6 @@ box-sizing: border-box;
     background-color: #011827;
     color: #8acfe5;
     border: 2px solid #8acfe5;
-    margin: 0 0 2.5rem 0;
 }
 
 /*play-block with photos*/
@@ -110,15 +111,11 @@ box-sizing: border-box;
     font-weight: 700;
     margin: 0 1rem 0 0; 
 }
-/* .mid_block_play p{
-
-} */
 
 .btn_challenges.book{
     background-color: #e3170a;
     color: white;
     min-width: 19.25rem;
-    margin: 2rem 0;
     justify-self: flex-start;
     display: inline-block;
 }
@@ -129,9 +126,9 @@ box-sizing: border-box;
     color: white;
     font-weight: 700;
     font-size: 1.5rem;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
     padding: 1rem;
-    margin: 2rem 5rem;
+    margin: 2rem 0 1rem 0;
     text-decoration: none;
 }
  .button_block{
@@ -143,25 +140,25 @@ box-sizing: border-box;
 .review_block{
     max-width: 32.625rem;
 }
-
 }
 
 @media screen and (min-width: 900px) {
-    .button_block{
+.button_block{
     flex-direction: row;
     justify-content: center;
+    gap: 1rem;
     margin-top: -4.5rem;
 }
-
-  .review_block_whole {
+.review_block_whole {
     display: flex;
     justify-content: center;
-  }
+    gap: 1rem;
+}
 .review_block{
     padding: 0;
 }
 .book_challenge, .see_challenges{
     max-width: 26rem;
+}
+}
 
-}
-}
