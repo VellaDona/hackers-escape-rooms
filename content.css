@@ -23,7 +23,6 @@
 .btn_challenges.on-site{
     background-color: #8acfe5;
     color: black;
-    /* margin: 2rem 0; */
 }
 
 .btn_challenges.online{
@@ -32,11 +31,12 @@
     font-size: 1rem;
     background: none;
     padding: 0.25rem;
-    /* margin: 0 4rem 2rem 4rem; */
     margin: 0;
-
 }
 /*review block*/
+.review_block_whole {
+    padding: 1rem;
+}
 .img_face{
     border-radius: 50%;
     height: 4.5rem;
@@ -45,7 +45,7 @@
 }
 .review_block{
     box-sizing: border-box;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     display:flex;
     align-items: flex-start;
     margin: 3rem 0;
@@ -60,7 +60,6 @@
     padding:  0 0 0 1rem;
     margin: 0 0 2rem 0;
 }
-
 .review_block.second{
     display: none;
 }
@@ -86,30 +85,35 @@ box-sizing: border-box;
     background-color: #011827;
     color: #8acfe5;
     border: 2px solid #8acfe5;
+    margin: 0;
 }
 
 /*play-block with photos*/
 .mid_block_play{
     color: black;
     display: grid;
+    margin-bottom: 10rem;
 }
 .mid_block_play.play{
     display: flex;
     align-items: flex-start;
-  
 }
-.book_challenge, .see_challenges {
-  padding: 2rem 1rem;    
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
+.book_challenge {
+    padding: 2rem 1rem;    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
-.mid_block_play h2{
+.book_challenge h2{
     font-size: 2rem;
     font-weight: 700;
     margin: 0 1rem 0 0; 
+   
+}
+.book_challenge p{
+   margin: 0; 
 }
 
 .btn_challenges.book{
@@ -118,6 +122,13 @@ box-sizing: border-box;
     min-width: 19.25rem;
     justify-self: flex-start;
     display: inline-block;
+}
+.play_img1, .play_img2 {
+    width: 100%;
+    max-height: clamp(18.75rem, 10vw + 2rem, 28,75rem);
+    object-fit: cover; 
+    justify-self: center;
+    margin: 0;
 }
 
 @media screen and (min-width: 600px) {
@@ -139,6 +150,36 @@ box-sizing: border-box;
 }  
 .review_block{
     max-width: 32.625rem;
+    padding: 0;
+    
+}
+
+/*block play*/
+.mid_block_play{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-content: center;
+}
+.play{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+.play_img1, .play_img2 { 
+    margin: 0 auto;
+}
+.play_img2{
+    order: 1;
+}
+.book_challenge{
+    max-width: 26rem;
+    max-height: 28.75rem;
+    align-self: center;
+}
+.book_challenge h2, .btn_challenges.book{
+    margin: 0;
 }
 }
 
@@ -154,11 +195,15 @@ box-sizing: border-box;
     justify-content: center;
     gap: 1rem;
 }
-.review_block{
-    padding: 0;
+
 }
-.book_challenge, .see_challenges{
-    max-width: 26rem;
-}
+
+@media screen and (min-width: 1280px) {
+  .play_img1, .play_img2 { 
+    max-width: 100%;
+    /* max-height: 28.75rem; */
+    /* object-fit: cover; */
+    margin: 0 auto;
+}  
 }
 
