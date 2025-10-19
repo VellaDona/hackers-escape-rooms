@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <div class="header-top">
-            <img class="logo" alt="logo" src="pics\logo128x82.png">
+            <img class="logo" alt="logo" src="pics\logo128x82.webp">
             <h1>Hacker Escape Rooms</h1>
         </div>
         <nav class="nav-header">
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="review_block second">
-                <img class="img_face" src="pics\main_2_face.webp" alt="customer's face">
+                <img class="img_face" src="pics/main_2_face.webp" alt="customer's face">
                 <div>
                     <p>This is a quote about how amazing this place is and how much fun me and my friends had when we
                         tried it.</p>
@@ -59,32 +59,51 @@
 
         <div class="button_block">
             <button type="button" class="btn_challenges on-site">On-site challenges</button>
-            <button type="button" class="btn_challenges online">Online challenges</button>
+            <button type="button" class="btn_challenges online primary">Online challenges</button>
         </div>
 
         <div class="middle_block_story">
             <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
-            <button type="button" class="btn_challenges story">Read the full story</button>
+            <button type="button" class="btn_challenges story primary">Read the full story</button>
         </div>
 
         <div class="mid_block_play">
             <section class="play">
-                <img class="play_img1" src="pics\main_2-1-1.webp" alt="people solving task in front of the computor">
+                    <picture> <!--full version with picture-->
+                        <source srcset="pics/main_2-1-416.webp"
+                            type="image/webp" media="(min-width: 600px)">
+                        <source srcset="pics/main_2-1-1.webp"
+                            type="image/webp" media="(max-width: 599px)">
+                        <img src="pics/main_2-1.png" alt="people solving task in front of the computor"
+                            title="people solving task in front of the computor" 
+                            decoding="async"
+                            style="max-inline-size: 100%">
+                    </picture>
+                <!-- <img  src="pics/main_2-1-1.webp" alt="people solving task in front of the computor"> -->
                 <div class="book_challenge">
                 <h2>Play with your friends or build your team stronger at work</h2>
                 <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                <button type="button" class="btn_challenges book">Book on-site today</button>
+                <button type="button" class="btn_challenges book primary">Book on-site today</button>
                 </div>
             </section>
-            <section class="play">
-                <img class="play_img2" src="pics\main_2-2-1.webp" alt="woman in from of the monitor">
+            <section class="play second">
+                <picture> <!--full version with picture-->
+                <source srcset="pics/main_2-2-460.webp"
+                            type="image/webp" media="(min-width: 600px)">
+                <source srcset="pics/main_2-2-1.webp"
+                            type="image/webp" media="(max-width: 599px)">
+                <img src="pics/main_2-2.png" alt="woman in from of the monitor"
+                title="woman in from of the monitor" 
+                decoding="async"
+                style="max-inline-size: 100%">
+                    </picture>
+                <!-- <img src="pics\main_2-2-1.webp" alt="woman in from of the monitor"> -->
                 <div class="book_challenge">
                 <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
                 <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                <button type="button" class="btn_challenges book">See all challenges</button>
+                <button type="button" class="btn_challenges book primary">See all challenges</button>
                 </div>
             </section>
-
         </div>
 
     </main>

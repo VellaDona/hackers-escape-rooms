@@ -89,46 +89,46 @@ box-sizing: border-box;
 }
 
 /*play-block with photos*/
-.mid_block_play{
+.mid_block_play{ 
     color: black;
     display: grid;
     margin-bottom: 10rem;
 }
-.mid_block_play.play{
-    display: flex;
-    align-items: flex-start;
+.play{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "img"
+    "content";
 }
 .book_challenge {
-    padding: 2rem 1rem;    
-    box-sizing: border-box;
+    grid-area: content;
+    padding: 2rem 1rem;   
+    box-sizing: border-box; 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 1rem;
 }
 .book_challenge h2{
     font-size: 2rem;
     font-weight: 700;
     margin: 0 1rem 0 0; 
-   
-}
-.book_challenge p{
-   margin: 0; 
 }
 
 .btn_challenges.book{
     background-color: #e3170a;
     color: white;
     min-width: 19.25rem;
-    justify-self: flex-start;
     display: inline-block;
+    margin: 2rem 0;
 }
-.play_img1, .play_img2 {
-    width: 100%;
-    max-height: clamp(18.75rem, 10vw + 2rem, 28,75rem);
+.play > picture,
+.play > picture img {
+    display: block;
+    width: 100vw;
     object-fit: cover; 
-    justify-self: center;
-    margin: 0;
+    grid-area: img;
+    align-self: start;
 }
 
 @media screen and (min-width: 600px) {
@@ -141,6 +141,11 @@ box-sizing: border-box;
     padding: 1rem;
     margin: 2rem 0 1rem 0;
     text-decoration: none;
+    @media (prefers-color-scheme: dark){
+    color: #8acfe5;
+    border: 2px solid #8acfe5;  
+    background-color: white;   
+    }
 }
  .button_block{
     align-items: center;
@@ -148,37 +153,35 @@ box-sizing: border-box;
 .review_block.second{
     display: flex;
 }  
-.review_block{
+.review_block  {
     max-width: 32.625rem;
     padding: 0;
-    
 }
-
-/*block play*/
-.mid_block_play{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    place-content: center;
+.review_block_whole {
+    justify-self: center;
 }
+    /*block play*/
 .play{
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-areas: "img content"; /* default: img left, content right */
+    align-items: start;
     justify-items: center;
 }
-.play_img1, .play_img2 { 
-    margin: 0 auto;
+.play > picture{
+    width: 100%;
 }
-.play_img2{
-    order: 1;
-}
-.book_challenge{
-    max-width: 26rem;
+.play > picture img{ 
     max-height: 28.75rem;
-    align-self: center;
+    align-self: start;
+  }
+ .play.second {
+    grid-template-areas: "content img"; /* content left, img right */
+  }
+  .book_challenge { 
+    justify-self: center; 
+    max-width: 26rem; 
 }
-.book_challenge h2, .btn_challenges.book{
+.btn_challenges.book{
     margin: 0;
 }
 }
@@ -195,15 +198,6 @@ box-sizing: border-box;
     justify-content: center;
     gap: 1rem;
 }
-
 }
 
-@media screen and (min-width: 1280px) {
-  .play_img1, .play_img2 { 
-    max-width: 100%;
-    /* max-height: 28.75rem; */
-    /* object-fit: cover; */
-    margin: 0 auto;
-}  
-}
 
