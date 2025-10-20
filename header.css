@@ -1,11 +1,12 @@
 .header {
     top: 0; /*offset to make position: sticky work*/
     position: sticky;
+    z-index: 2;
     max-height: 13.5rem;
     box-sizing: border-box;
-    /* display: grid; */
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .header-top {
@@ -33,7 +34,9 @@
 @media screen and (min-width: 600px) { 
     .nav-header ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0;
     }
 
     .header h1 {
@@ -42,19 +45,14 @@
         flex: 1 1 auto;
     }
 
-    .header>nav ul li {
+    .header > nav ul li {
         font-weight: 700;
-        padding: 1rem 0 0 1.5rem;
         font-size: 1.5rem;
     }
 }
 
 @media screen and (min-width: 900px)  { 
-    .nav-header ul {
-        display: flex;
-        justify-content: space-around;
-    }
     .nav-header {
-        padding: 0 10rem;
+        margin: 0 7rem;
     }   
 }

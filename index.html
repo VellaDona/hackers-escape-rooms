@@ -5,23 +5,23 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Hackers Escape Rooms</title>
-    <meta name="description" content="A meeting place where friends or colleagues can come together for team-building challenges with a hacker theme">
+    <meta name="description"
+        content="A meeting place where friends or colleagues can come together for team-building challenges with a hacker theme">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="color-scheme" content="light dark">
     <link rel='stylesheet' type='text/css' media='screen' href='header.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='footer.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='content.css'>
     <link rel="stylesheet" type="text/css" href="common.css">
-    <link rel="preload" href="font_roboto/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-    <!--Preload for custom font-->
-    <script src='main.js'></script>
+       <!--custom font Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- <script defer src='main.js'></script> -->
 </head>
 
 <body>
     <header class="header">
         <div class="header-top">
-            <img class="logo" alt="Hackers Escape Rooms logo" 
-           src="pics\logo128x82.webp">
+            <img class="logo" alt="Hackers Escape Rooms logo" src="pics\logo128x82.webp">
             <h1>Hacker Escape Rooms</h1>
         </div>
         <nav class="nav-header" aria-label="main nagivation">
@@ -66,44 +66,53 @@
             <button type="button" class="btn_challenges online primary">Online challenges</button>
         </div>
 
+        <section class="challenge_now">
+            <h2>Polular challenges right now</h2>
+
+            <article class="escape_room">
+                <img class="main_img" src="pics\main_img.webp" alt="hacker sitting in front of the computor">
+                <div>
+                <h3>Title of the room (on-site)</h3>
+
+                </div>
+            </article>
+        </section>
+
+
         <section class="middle_block_story">
-            <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+            <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque
+                vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
             <button type="button" class="btn_challenges story primary">Read the full story</button>
         </section>
 
         <section class="mid_block_play">
             <article class="play">
-                    <picture> <!--full version with picture-->
-                        <source srcset="pics/main_2-1-416.webp"
-                            type="image/webp" media="(min-width: 600px)">
-                        <source srcset="pics/main_2-1-1.webp"
-                            type="image/webp" media="(max-width: 599px)">
-                        <img src="pics/main_2-1.png" alt="people solving task in front of the computor"
-                            title="people solving task in front of the computor" 
-                            decoding="async"
-                            style="max-inline-size: 100%">
-                    </picture>
+                <picture> <!--full version with picture-->
+                    <source srcset="pics/main_2-1-416.webp" type="image/webp" media="(min-width: 600px)">
+                    <source srcset="pics/main_2-1-1.webp" type="image/webp" media="(max-width: 599px)">
+                    <img src="pics/main_2-1.png" alt="people solving task in front of the computor"
+                        title="people solving task in front of the computor" decoding="async"
+                        style="max-inline-size: 100%">
+                </picture>
                 <div class="book_challenge">
-                <h2>Play with your friends or build your team stronger at work</h2>
-                <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                <button type="button" class="btn_challenges book primary">Book on-site today</button>
+                    <h2>Play with your friends or build your team stronger at work</h2>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi
+                        erit, et non inimicos, et</p>
+                    <button type="button" class="btn_challenges book primary">Book on-site today</button>
                 </div>
             </article>
             <article class="play second">
                 <picture> <!--full version with picture-->
-                <source srcset="pics/main_2-2-460.webp"
-                            type="image/webp" media="(min-width: 600px)">
-                <source srcset="pics/main_2-2-1.webp"
-                            type="image/webp" media="(max-width: 599px)">
-                <img src="pics/main_2-2.png" alt="woman in from of the monitor"
-                title="woman in from of the monitor" 
-                decoding="async"
-                style="max-inline-size: 100%">
-                    </picture>
+                    <source srcset="pics/main_2-2-460.webp" type="image/webp" media="(min-width: 600px)">
+                    <source srcset="pics/main_2-2-1.webp" type="image/webp" media="(max-width: 599px)">
+                    <img src="pics/main_2-2.png" alt="woman in from of the monitor" title="woman in from of the monitor"
+                        decoding="async" style="max-inline-size: 100%">
+                </picture>
                 <div class="book_challenge">
-                <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
-                <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                <button type="button" class="btn_challenges book primary">See all challenges</button>
+                    <h2>Play online or visit our venue for one of our 25 escape rooms</h2>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi
+                        erit, et non inimicos, et</p>
+                    <button type="button" class="btn_challenges book primary">See all challenges</button>
                 </div>
             </article>
         </section>
@@ -112,7 +121,8 @@
     <footer class="footer">
         <div class="footer-container">
             <h3>[Esc] Hacker Escape Rooms</h3>
-            <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+            <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque
+                vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
         </div>
 
         <nav class="footer-container nav-footer">
