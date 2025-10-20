@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Hackers Escape Rooms</title>
+    <meta name="description" content="A meeting place where friends or colleagues can come together for team-building challenges with a hacker theme">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="color-scheme" content="light dark">
     <link rel='stylesheet' type='text/css' media='screen' href='header.css'>
@@ -19,10 +20,11 @@
 <body>
     <header class="header">
         <div class="header-top">
-            <img class="logo" alt="logo" src="pics\logo128x82.webp">
+            <img class="logo" alt="Hackers Escape Rooms logo" 
+           src="pics\logo128x82.webp">
             <h1>Hacker Escape Rooms</h1>
         </div>
-        <nav class="nav-header">
+        <nav class="nav-header" aria-label="main nagivation">
             <ul>
                 <li><a href="#">Play online</a></li>
                 <li><a href="#">Play on-site</a></li>
@@ -31,6 +33,7 @@
             </ul>
         </nav>
     </header>
+
     <main class="main">
         <img class="main_img" src="pics\main_img.webp" alt="hacker sitting in front of the computor">
 
@@ -39,37 +42,37 @@
             <button type="button" class="btn_challenges online">Online challenges</button>
         </div>
 
-        <div class="review_block_whole">
-            <div class="review_block first">
+        <setcion class="review_block_whole">
+            <article class="review_block first">
                 <img class="img_face" src="pics\main_2_face.webp" alt="customer's face">
                 <div>
                     <p>This is a quote about how amazing this place is and how much fun me and my friends had when we
                         tried it.</p>
                     <p>John Doe, visited us in September 2021</p>
                 </div>
-            </div>
-            <div class="review_block second">
+            </article>
+            <article class="review_block second">
                 <img class="img_face" src="pics/main_2_face.webp" alt="customer's face">
                 <div>
                     <p>This is a quote about how amazing this place is and how much fun me and my friends had when we
                         tried it.</p>
                     <p>John Doe, visited us in September 2021</p>
                 </div>
-            </div>
-        </div>
+            </article>
+        </setcion>
 
         <div class="button_block">
             <button type="button" class="btn_challenges on-site">On-site challenges</button>
             <button type="button" class="btn_challenges online primary">Online challenges</button>
         </div>
 
-        <div class="middle_block_story">
+        <section class="middle_block_story">
             <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
             <button type="button" class="btn_challenges story primary">Read the full story</button>
-        </div>
+        </section>
 
-        <div class="mid_block_play">
-            <section class="play">
+        <section class="mid_block_play">
+            <article class="play">
                     <picture> <!--full version with picture-->
                         <source srcset="pics/main_2-1-416.webp"
                             type="image/webp" media="(min-width: 600px)">
@@ -85,8 +88,8 @@
                 <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
                 <button type="button" class="btn_challenges book primary">Book on-site today</button>
                 </div>
-            </section>
-            <section class="play second">
+            </article>
+            <article class="play second">
                 <picture> <!--full version with picture-->
                 <source srcset="pics/main_2-2-460.webp"
                             type="image/webp" media="(min-width: 600px)">
@@ -102,10 +105,10 @@
                 <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
                 <button type="button" class="btn_challenges book primary">See all challenges</button>
                 </div>
-            </section>
-        </div>
-
+            </article>
+        </section>
     </main>
+
     <footer class="footer">
         <div class="footer-container">
             <h3>[Esc] Hacker Escape Rooms</h3>
@@ -123,7 +126,7 @@
             </ul>
         </nav>
 
-        <address class="footer-container footer-details">
+        <address class="footer-container footer-details" aria-label="Social media">
             <h3>Follow us on</h3>
             <ul>
                 <li><a href="#">Facebook</a></li>
