@@ -13,8 +13,9 @@
     <link rel='stylesheet' type='text/css' media='screen' href='footer.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='content.css'>
     <link rel="stylesheet" type="text/css" href="common.css">
-       <!--custom font Roboto-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--custom font Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <!-- <script defer src='main.js'></script> -->
 </head>
 
@@ -36,13 +37,14 @@
 
     <main class="main">
         <img class="main_img" src="pics\main_img.webp" alt="hacker sitting in front of the computor">
-
+        <!-- button block 1-->
         <div class="button_block">
             <button type="button" class="btn_challenges on-site">On-site challenges</button>
             <button type="button" class="btn_challenges online">Online challenges</button>
         </div>
 
-        <setcion class="review_block_whole">
+        <!-- review block -->
+        <section class="review_block_whole">
             <article class="review_block first">
                 <img class="img_face" src="pics\main_2_face.webp" alt="customer's face">
                 <div>
@@ -59,32 +61,68 @@
                     <p>John Doe, visited us in September 2021</p>
                 </div>
             </article>
-        </setcion>
+        </section>
 
+        <!-- cards of escape rooms -->
+        <section class="challenge_now">
+            <h2 class="escape">Popular challenges right now</h2>
+            <div class="escape_now">
+                <article class="escape_room">
+                    <img class="main_img" src="pics\main_img.webp" alt="hacker sitting in front of the computor">
+                    <div class="escape_room_content">
+                        <h3>Title of the room (on-site)</h3>
+                        <small class="small">
+                            <div class="rating">
+                                <span class="star_checked">★</span>
+                                <span class="star_checked">★</span>
+                                <span class="star_checked">★</span>
+                                <span class="star_checked">★</span>
+                                <span class="star_unchecked">✩</span>
+                            </div>
+                            <span class="participants">2-6 participants</span>
+                        </small>
+                        <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere
+                            tibi erit, et non inimicos, et</p>
+                    </div>
+                    <button type="button" class="btn_challenges on-site">Book this room</button>
+                </article>
+
+                <article class="escape_room">
+                    <img class="main_img" src="pics\main_img.webp" alt="hacker sitting in front of the computor">
+                    <div class="escape_room_content">
+                        <h3>Title of the room (on-site)</h3>
+                        <small class="small">
+                            <div class="rating">
+                                <span class="star_checked">★</span>
+                                <span class="star_checked">★</span>
+                                <span class="star_checked">★</span>
+                                <span class="star_checked">★</span>
+                                <span class="star_unchecked">✩</span>
+                            </div>
+                            <span class="participants">2-6 participants</span>
+                        </small>
+                        <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere
+                            tibi erit, et non inimicos, et</p>
+                    </div>
+                    <button type="button" class="btn_challenges on-site">Book this room</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- button block 2-->
         <div class="button_block">
             <button type="button" class="btn_challenges on-site">On-site challenges</button>
             <button type="button" class="btn_challenges online primary">Online challenges</button>
         </div>
 
-        <section class="challenge_now">
-            <h2>Polular challenges right now</h2>
-
-            <article class="escape_room">
-                <img class="main_img" src="pics\main_img.webp" alt="hacker sitting in front of the computor">
-                <div>
-                <h3>Title of the room (on-site)</h3>
-
-                </div>
-            </article>
-        </section>
-
-
+        <!-- story block -->
         <section class="middle_block_story">
             <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque
                 vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
             <button type="button" class="btn_challenges story primary">Read the full story</button>
         </section>
 
+        <!-- booking block -->
         <section class="mid_block_play">
             <article class="play">
                 <picture> <!--full version with picture-->

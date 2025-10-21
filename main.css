@@ -19,8 +19,7 @@ a{
 .header-top{
     display: flex;
     box-sizing: border-box;
-    padding: 1rem;
-    
+    padding: 1rem;   
 }
 .header img{
     padding: 0.5rem;
@@ -29,7 +28,6 @@ a{
 font-weight: 700;
 padding: 1rem 0 0 1.5rem;
 font-size: 2.5rem;
-
 overflow-wrap: break-word;
 }
 

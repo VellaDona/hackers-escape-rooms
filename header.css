@@ -5,8 +5,6 @@
     max-height: 13.5rem;
     box-sizing: border-box;
     display: grid;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .header-top {
