@@ -284,15 +284,7 @@ font-size: 0.875rem;
 }
 }
 @media screen and (min-width: 1280px) {
-    .footer{
-    padding: 0;
-    }
-    .footer-container{
-    padding: 6.75rem;
-    }
-    .footer-container p{
-    margin-right: 0;
-}
+
 /*block escape_room*/
     .escape_now {
     gap: 3rem;
