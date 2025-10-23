@@ -30,7 +30,7 @@ a {
 .footer a:active,
 .header a:focus,
 .footer a:focus{ 
-color: #8acfe5;
+    color: #8acfe5;
 }
 button {
   cursor: pointer;
@@ -52,6 +52,7 @@ button {
     max-height: 13.5rem;
     display: grid;
     height: 9rem;
+    margin: 0; 
 }
 .header-top {
     display: flex;
@@ -74,27 +75,27 @@ button {
 
 @media screen and (min-width: 600px) {
 .header{
-        height: 13.5rem;
+    height: 13.5rem;
     }
 .nav-header ul {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
     }
 .header h1 {
-        font-size: clamp(1.3rem, 4vw + 0.6rem, 2.5rem);
-        overflow-wrap: normal;
-        flex: 1 1 auto;
+    font-size: clamp(1.3rem, 4vw + 0.6rem, 2.5rem);
+    overflow-wrap: normal;
+    flex: 1 1 auto;
     }
 .header > nav ul li {
-        font-weight: 700;
-        font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
     }
 }
 
 @media screen and (min-width: 900px)  {
 .nav-header {
-        margin: 0 7rem;
+    margin: 0 7rem;
     }
 }
 
@@ -115,6 +116,9 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /**/
+    max-inline-size: 100vw; 
+
 }
 .btn_challenges {
     font-weight: 700;
@@ -144,6 +148,7 @@ button {
 /*review block*/
 .review_block_whole {
     padding: 1rem;
+    max-inline-size: 100vw; /**/
 }
 .img_face {
     border-radius: 50%;
@@ -199,8 +204,10 @@ button {
     display: grid;
     border-radius: 0.5rem;
     width: 363px;
+    height: 446px;
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.7);
     margin: 2rem 0;
+    box-sizing: border-box;
 }
 .escape_room:first-of-type {
     margin-left: 3.25rem;
@@ -214,7 +221,7 @@ button {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 1rem;
+    padding-left: 1rem;
 }
 .escape_room h3 {
     margin: 0;
@@ -223,32 +230,39 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: #e3170a;
     grid-column: 2/3;
+    grid-row: 3;
     border-radius: 0.5rem;
     font-size: 1rem;
-    padding: 0;
+    padding: 0 0.3rem ;
     width: 11.205rem;
     height: 2.75rem;
     margin-right: 1rem;
+    margin-block: 0;
     color: white;
 }
-.escape_room_content p{
+.escape_room_content p {
     font-size: 1.125rem;
+    padding: 0;
+    margin-bottom: 0;
 }
 .escape_room > img {
     grid-column: 1/3;
     border-radius: 0.5rem 0.5rem 0 0;
+    max-inline-size: 363px;
+    height: auto;
+    object-fit: cover;
 }
 .escape_room .small {
     grid-column: 1/3;
     display: flex;
     align-items: baseline;
 }
+
 .participants {
-    padding-left: 0.5rem;
-    font-size: 0.875rem;
+    padding-inline: 1rem;
+    font-size: 14px;
 }
 
 /*middle block story*/
@@ -316,7 +330,7 @@ button {
 @media screen and (min-width: 600px) {
 .main_img {
     height: 29.25rem;
-}
+    }
 .btn_challenges.online {
     background-color: #e3170a;
     color: white;
@@ -336,7 +350,7 @@ button {
     display: flex;
     }
 .review_block  {
-    width: 32.625rem;
+    max-width: 32.5rem;
     max-height: 8.8125rem;
     padding: 0;
     }
@@ -360,10 +374,10 @@ button {
 .play > picture img {
     max-height: 28.75rem;
     align-self: start;
-  }
+    }
 .play.second {
     grid-template-areas: "content img"; /* content left, img right */
-  }
+    }
 .book_challenge {
     justify-self: center;
     max-width: 26rem;
@@ -387,6 +401,10 @@ button {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    }
+    .escape_room .small {
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
@@ -466,6 +484,7 @@ button {
     }
 }
 
+
 /*DARK MODE*/
 @media (prefers-color-scheme: dark) {
 .main {
@@ -476,4 +495,73 @@ button {
     border: 2px solid #8acfe5;
     background-color: white;
 }
+}
+/* Limit content to 1280px with desktop >1280, while backgound on header and footer is full-bleed */
+@media screen and (min-width: 1281px) {
+  :root { --site-max-inline: 1280px; }
+
+  /* .header > *,
+  .footer > *,
+  .main > *,
+  .mid_block_play > *,
+  .play > *,
+  .escape_now,
+  .review_block_whole,
+  .button_block, 
+  .btn_challenges.story > *, 
+  .mid_block_play .play,
+  .mid_block_play .book_challenge */
+
+  .header > *,
+  .footer > *,
+  .main,
+  .mid_block_play,
+  .play,
+  .escape_now,
+  .review_block_whole,
+  .button_block, 
+  .btn_challenges.story > *, 
+  .mid_block_play .play,
+  .mid_block_play .book_challenge{
+    max-inline-size: var(--site-max-inline);
+    width: 100%;
+    margin-inline: auto;
+  }
+
+    /*limit container with cards and leave the scroll*/
+  .escape_now {
+    grid-auto-flow: column;        /* строки карточек располагаются в ряд */
+    grid-auto-columns: min-content;/* колонки принимают ширину содержимого (карточек) */
+    scroll-snap-type: x proximity; /* snap остаётся */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* --- Карточки: фиксированная ширина, не сжимаются и сохраняют пропорции первой карточки --- */
+  .escape_room {
+    width: 363px;       /* твоя заданная ширина — оставляем её явной */
+    min-width: 363px;   /* не даём карточке уменьшаться */
+    flex: 0 0 auto;     /* если где-то применяется flex — защита от сжатия */
+    box-sizing: border-box;
+    scroll-snap-align: start;
+  }
+
+  /* первая карточка — сохраняем отступ слева */
+  .escape_room:first-of-type {
+    margin-left: 3.25rem;
+  }
+
+  .escape_room > img {
+    inline-size: 100%;
+    max-inline-size: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+  .footer {
+     display: grid; 
+    grid-auto-flow: column; 
+    padding-inline: calc((100vw - 1280px) / 2);
+  }
+  .footer-container {
+     grid-auto-columns: min-content;
+  }
 }
