@@ -276,9 +276,8 @@ button {
 
 /*play-block with photos*/
 .mid_block_play {
-    color: black;
     display: grid;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 .play {
     display: grid;
@@ -346,6 +345,9 @@ button {
     }
 
     /*block play*/
+    .mid_block_play {
+    margin-bottom: 10rem;
+}
 .play {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img content"; /* default: img left, content right */
@@ -398,7 +400,7 @@ button {
 .footer {
     display: grid;
     width: 100%;
-    max-height: 35.4rem;
+    max-height: 35.375rem;
     padding: 3rem 1.3rem;
     font-size: 1.15rem;
 }
