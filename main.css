@@ -76,27 +76,27 @@ button {
 @media screen and (min-width: 600px) {
 .header{
     height: 13.5rem;
-    }
+}
 .nav-header ul {
     display: flex;
     justify-content: space-evenly;
     padding: 0;
-    }
+}
 .header h1 {
     font-size: clamp(1.3rem, 4vw + 0.6rem, 2.5rem);
     overflow-wrap: normal;
     flex: 1 1 auto;
-    }
+}
 .header > nav ul li {
     font-weight: 700;
     font-size: 1.5rem;
-    }
+}
 }
 
 @media screen and (min-width: 900px)  {
 .nav-header {
     margin: 0 7rem;
-    }
+}
 }
 
 /*MAIN*/
@@ -116,9 +116,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /**/
     max-inline-size: 100vw; 
-
 }
 .btn_challenges {
     font-weight: 700;
@@ -189,13 +187,12 @@ button {
 }
 .escape_now {
     display: grid;
+    grid-auto-flow: column; 
     gap: 2rem;
     width: 100vw;
     overflow-x: auto;
-    scroll-snap-type: x proximity;
-}
-.rating {
-    color:#e3170a;
+    scroll-snap-type: x proximity; /*smooth scrolling*/
+     -webkit-overflow-scrolling: touch; /*smooth scrolling on mobiles*/
 }
 
 /*escape room card*/
@@ -259,7 +256,9 @@ button {
     display: flex;
     align-items: baseline;
 }
-
+.rating {
+    color:#e3170a;
+}
 .participants {
     padding-inline: 1rem;
     font-size: 14px;
@@ -327,10 +326,35 @@ button {
     height: auto;
 }
 
+/*responsive design for mobiles 320px*/
+@media screen and (max-width: 479px) {
+.middle_block_story {
+    padding: 0.5rem; 
+    height: auto;
+}
+.middle_block_story p {
+    padding-inline: auto;
+    padding-block: 1rem;
+}
+.escape_room {
+    width: 300px;
+}
+.review_block_whole {
+    padding-bottom: 3rem;
+}    
+.btn_challenges.book,
+.btn_challenges.story {
+  width: auto;          
+  min-width: 0;         
+  height: auto;
+  white-space: nowrap;  
+}
+}
+
 @media screen and (min-width: 600px) {
 .main_img {
     height: 29.25rem;
-    }
+}
 .btn_challenges.online {
     background-color: #e3170a;
     color: white;
@@ -340,26 +364,25 @@ button {
     padding: 1rem;
     text-decoration: none;
     margin: 2rem 0;
-    }
+}
 .button_block {
     align-items: center;
-    }
-
+}
     /*review block*/
 .review_block.second{
     display: flex;
-    }
+}
 .review_block  {
     max-width: 32.5rem;
     max-height: 8.8125rem;
     padding: 0;
-    }
+}
 .review_block_whole {
     justify-self: center;
-    }
+}
 
     /*block play*/
-    .mid_block_play {
+.mid_block_play {
     margin-bottom: 10rem;
 }
 .play {
@@ -367,27 +390,27 @@ button {
     grid-template-areas: "img content"; /* default: img left, content right */
     align-items: start;
     justify-items: center;
-    }
+}
 .play > picture {
     width: 100%;
-    }
+}
 .play > picture img {
     max-height: 28.75rem;
     align-self: start;
-    }
+}
 .play.second {
     grid-template-areas: "content img"; /* content left, img right */
-    }
+}
 .book_challenge {
     justify-self: center;
     max-width: 26rem;
-    }
+}
 .btn_challenges.book {
     margin: 0;
-    }
+}
 .escape_now {
     margin-bottom: 5rem;
-    }
+}
 }
 
 @media screen and (min-width: 900px) {
@@ -396,22 +419,22 @@ button {
     justify-content: center;
     gap: 1rem;
     margin-top: -4.5rem;
-    }
+}
 .review_block_whole {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    }
+}
     .escape_room .small {
         justify-content: space-between;
         width: 100%;
-    }
+}
 }
 
 @media screen and (min-width: 1280px) {
 .escape_now {
     gap: 3rem;
-    }
+}
 }
 
 /*FOOTER*/
@@ -457,33 +480,58 @@ button {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    }
+}
 .footer-details, .nav-footer{
     flex: 1 1 auto;
-    }
+}
 .footer-container {
     padding: 2.5rem 0rem;
-    }
+}
 .footer-container p{
     max-width: 26rem;
-    }
+}
 }
 
 @media screen and (min-width: 900px) {
-    .footer{
+.footer{
     height: 29rem;
-    }
+}
 }
 
 @media screen and (min-width: 1280px) {
-    .footer{
+.footer{
     padding: 0;
-    }
-    .footer-container {
+}
+.footer-container{
     padding: 6.75rem;
-    }
+}
 }
 
+/* Limit content to 1280px for desktop screens >1280, while background on header and footer remains full-bleed */
+@media screen and (min-width: 1281px) {
+:root { --site-max-inline: 1280px; }
+
+.header > *,
+.footer > *,
+.main,
+.mid_block_play,
+.play,
+.escape_now,
+.review_block_whole,
+.button_block, 
+.btn_challenges.story > *, 
+.mid_block_play .play,
+.mid_block_play .book_challenge {
+    max-inline-size: var(--site-max-inline);
+    width: 100%;
+    margin-inline: auto;
+}
+.footer {
+    display: grid; 
+    grid-auto-flow: column; 
+    padding-inline: calc((100vw - 1280px) / 2);
+}
+}
 
 /*DARK MODE*/
 @media (prefers-color-scheme: dark) {
@@ -495,73 +543,4 @@ button {
     border: 2px solid #8acfe5;
     background-color: white;
 }
-}
-/* Limit content to 1280px with desktop >1280, while backgound on header and footer is full-bleed */
-@media screen and (min-width: 1281px) {
-  :root { --site-max-inline: 1280px; }
-
-  /* .header > *,
-  .footer > *,
-  .main > *,
-  .mid_block_play > *,
-  .play > *,
-  .escape_now,
-  .review_block_whole,
-  .button_block, 
-  .btn_challenges.story > *, 
-  .mid_block_play .play,
-  .mid_block_play .book_challenge */
-
-  .header > *,
-  .footer > *,
-  .main,
-  .mid_block_play,
-  .play,
-  .escape_now,
-  .review_block_whole,
-  .button_block, 
-  .btn_challenges.story > *, 
-  .mid_block_play .play,
-  .mid_block_play .book_challenge{
-    max-inline-size: var(--site-max-inline);
-    width: 100%;
-    margin-inline: auto;
-  }
-
-    /*limit container with cards and leave the scroll*/
-  .escape_now {
-    grid-auto-flow: column;        /* строки карточек располагаются в ряд */
-    grid-auto-columns: min-content;/* колонки принимают ширину содержимого (карточек) */
-    scroll-snap-type: x proximity; /* snap остаётся */
-    -webkit-overflow-scrolling: touch;
-  }
-
-  /* --- Карточки: фиксированная ширина, не сжимаются и сохраняют пропорции первой карточки --- */
-  .escape_room {
-    width: 363px;       /* твоя заданная ширина — оставляем её явной */
-    min-width: 363px;   /* не даём карточке уменьшаться */
-    flex: 0 0 auto;     /* если где-то применяется flex — защита от сжатия */
-    box-sizing: border-box;
-    scroll-snap-align: start;
-  }
-
-  /* первая карточка — сохраняем отступ слева */
-  .escape_room:first-of-type {
-    margin-left: 3.25rem;
-  }
-
-  .escape_room > img {
-    inline-size: 100%;
-    max-inline-size: 100%;
-    height: auto;
-    object-fit: cover; 
-  }
-  .footer {
-     display: grid; 
-    grid-auto-flow: column; 
-    padding-inline: calc((100vw - 1280px) / 2);
-  }
-  .footer-container {
-     grid-auto-columns: min-content;
-  }
 }
