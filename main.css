@@ -22,7 +22,7 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
-    cursor: coarse;
+    cursor: pointer;
 }
 .header a:hover,
 .footer a:hover,
@@ -96,9 +96,6 @@ a {
 @media screen and (min-width: 900px)  {
 .nav-header {
     margin: 0 7rem;
-}
-a {
-    cursor: pointer;
 }
 }
 
@@ -198,7 +195,7 @@ a {
     overflow-x: scroll;
     cursor: grab;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /*smooth scrolling on mobiles*/
+    -webkit-overflow-scrolling: touch; /*scrolling on mobiles*/
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE/ Edge */
 }
@@ -346,7 +343,6 @@ a {
     height: auto;
 }
 .middle_block_story p {
-    padding-inline: auto;
     padding-block: 1rem;
 }
 .escape_room {
