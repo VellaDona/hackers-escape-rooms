@@ -448,7 +448,11 @@ a {
 .escape_now {
     gap: 3rem;
 }
-.book_challenge p, .book_challenge h3{
+.book_challenge {
+    padding: 2rem 2rem 2rem 6.75rem;
+    justify-self: start;
+}
+.book_challenge p, .book_challenge h3 {
     width: 26rem;
 }
 }
