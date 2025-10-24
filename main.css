@@ -438,7 +438,7 @@ a {
     justify-content: center;
     gap: 1rem;
 }
-    .escape_room .small {
+.escape_room .small {
         justify-content: space-between;
         width: 100%;
 }
@@ -447,6 +447,9 @@ a {
 @media screen and (min-width: 1280px) {
 .escape_now {
     gap: 3rem;
+}
+.book_challenge p, .book_challenge h3{
+    width: 26rem;
 }
 }
 
