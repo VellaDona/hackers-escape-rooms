@@ -87,7 +87,7 @@ a {
     overflow-wrap: normal;
     flex: 1 1 auto;
 }
-.header > nav ul li {
+.header__menu-item {
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -474,7 +474,7 @@ a {
     font-size: 1.125rem;
     margin: 0;
 }
-.footer-details{
+.footer__details{
     font-style: normal;
 }
 .footer__container ul {
@@ -498,7 +498,7 @@ a {
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.footer-details, .footer__menu {
+.footer__details, .footer__menu {
     flex: 1 1 auto;
 }
 .footer__container {
