@@ -146,7 +146,8 @@ a {
 /*review block*/
 .review_block_whole {
     padding: 1rem;
-    max-inline-size: 100vw; /**/
+    box-sizing: border-box;
+    max-inline-size: 100vw; 
 }
 .img_face {
     border-radius: 50%;
@@ -178,7 +179,7 @@ a {
 .challenge_now {
     margin: 3rem 0 0 0;
 }
- .challenge_now h2 {
+.challenge_now h2 {
     text-align: center;
     font-weight: 400;
     font-size: 2rem;
@@ -199,7 +200,7 @@ a {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE/ Edge */
 }
-  .escape_now::-webkit-scrollbar {
+.escape_now::-webkit-scrollbar {
     display: none;          /* Chrome/ Safari/ Opera */
 }
 .escape_now:active {
@@ -369,7 +370,7 @@ a {
     color: white;
     font-weight: 700;
     font-size: 1.5rem;
-    border-radius: 0.3rem;
+    border-radius: 0.25rem;
     padding: 1rem;
     text-decoration: none;
     margin: 2rem 0;
