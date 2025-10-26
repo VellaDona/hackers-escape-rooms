@@ -173,7 +173,6 @@ a {
     font-size: 1.125rem;
     padding:  0 0 0 1rem;
     margin: 0 0 2rem 0;
-    /* max-width: 17.84rem; */
 }
 .review__card.second {
     display: none;
@@ -440,11 +439,11 @@ a {
     gap: 1rem;
 }
 .review__card p:last-of-type {
-    width: 18rem;
+    max-width: 18rem;
 }
 .escape_room .small {
-        justify-content: space-between;
-        width: 100%;
+    justify-content: space-between;
+    width: 100%;
 }
 }
 
