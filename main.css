@@ -354,7 +354,7 @@ a {
     grid-template-columns: 1fr;
 }
   .escape_room > .btn_challenges {
-    margin: 0 0 0.5rem 0;
+    margin: 0 1rem 0.5rem 0;
     max-width: 15rem;
   }
 .review__container {
