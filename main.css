@@ -164,12 +164,12 @@ a {
 .review__card-quote {
     margin: 0;
 }
-.review__card p:first-of-type {
+.review__card-quote p:first-of-type {
     font-style: italic;
     padding-left: 1rem;
     margin: 0 0 0.5rem 0;
 }
-.review__card p:last-of-type {
+.review__card-quote p:last-of-type {
     font-size: 1.125rem;
     padding:  0 0 0 1rem;
     margin: 0 0 2rem 0;
@@ -443,7 +443,10 @@ a {
     justify-content: center;
     gap: 1rem;
 }
-.review__card p:last-of-type {
+.img_face {
+    margin: 0;
+}
+.review__card-quote p:last-of-type {
     max-width: 18rem;
 }
 .escape_room .small {
