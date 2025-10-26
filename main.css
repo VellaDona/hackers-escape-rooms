@@ -144,7 +144,7 @@ a {
 }
 
 /*review block*/
-.review_block_whole {
+.review__container {
     padding: 1rem;
     box-sizing: border-box;
     max-inline-size: 100vw; 
@@ -154,24 +154,28 @@ a {
     height: 4.5rem;
     margin-right: 1rem;
 }
-.review_block {
+.review__card {
     display:flex;
     align-items: flex-start;
     margin: 3rem 0;
     max-width:27.44rem;
     height: 8.6875rem;
 }
-.review_block p:first-of-type {
+.review__card-quote {
+    margin: 0;
+}
+.review__card p:first-of-type {
     font-style: italic;
     padding-left: 1rem;
     margin: 0 0 0.5rem 0;
 }
-.review_block p:last-of-type {
-    font-size: 1rem;
+.review__card p:last-of-type {
+    font-size: 1.125rem;
     padding:  0 0 0 1rem;
     margin: 0 0 2rem 0;
+    /* max-width: 17.84rem; */
 }
-.review_block.second {
+.review__card.second {
     display: none;
 }
 
@@ -349,7 +353,7 @@ a {
 .escape_room {
     width: 300px;
 }
-.review_block_whole {
+.review__container {
     padding-bottom: 3rem;
 }    
 .btn_challenges.book,
@@ -379,15 +383,15 @@ a {
     align-items: center;
 }
     /*review block*/
-.review_block.second{
+.review__card.second{
     display: flex;
 }
-.review_block  {
+.review__card  {
     max-width: 32.5rem;
     max-height: 8.8125rem;
     padding: 0;
 }
-.review_block_whole {
+.review__container {
     justify-self: center;
 }
 
@@ -430,10 +434,13 @@ a {
     gap: 1rem;
     margin-top: -4.5rem;
 }
-.review_block_whole {
+.review__container {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+.review__card p:last-of-type {
+    width: 18rem;
 }
 .escape_room .small {
         justify-content: space-between;
@@ -534,7 +541,7 @@ a {
 .mid_block_play,
 .play,
 .escape_now,
-.review_block_whole,
+.review__container,
 .button_block, 
 .btn_challenges.story > *, 
 .mid_block_play .play,
