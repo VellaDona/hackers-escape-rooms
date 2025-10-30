@@ -283,6 +283,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 31.25rem;
     margin-top: 1.25rem;
 }
@@ -546,13 +547,7 @@ a {
 .footer > *,
 .main,
 .mid_block_play,
-.play,
-.escape_now,
-.review__container,
-.button_block, 
-.btn_challenges.story > *, 
-.mid_block_play .play,
-.mid_block_play .book_challenge {
+.escape_now {
     max-inline-size: var(--site-max-inline);
     width: 100%;
     margin-inline: auto;
